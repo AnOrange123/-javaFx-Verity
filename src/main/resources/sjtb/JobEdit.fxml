@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<VBox id="mainVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1270.0" stylesheets="@JobEdit.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="service.sjtb.JobEditController">
+   <children>
+      <Label id="jobNameLabel" fx:id="jobNameLabel" prefHeight="32.0" prefWidth="458.0" textFill="WHITE">
+         <VBox.margin>
+            <Insets left="20.0" />
+         </VBox.margin></Label>
+      <HBox prefHeight="216.0" prefWidth="1262.0" spacing="300.0">
+         <children>
+            <HBox prefHeight="153.0" prefWidth="411.0" spacing="50.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="40.0">
+                     <children>
+                        <Label id="tagLabel" text="数据源类型" />
+                        <Label id="tagLabel" text="来源数据库" />
+                        <Label id="tagLabel" prefHeight="16.0" prefWidth="80.0" text="来源数据表" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="156.0" prefWidth="250.0" spacing="25.0">
+                     <children>
+                        <TextField id="sourceDataTypeTextField" fx:id="sourceDataTypeTextField" disable="true" editable="false" focusTraversable="false" />
+                        <TextField id="sourceDatabaseTextField" fx:id="sourceDatabaseTextField" disable="true" editable="false" focusTraversable="false" />
+                        <TextField id="sourceDatatableTextField" fx:id="sourceDatatableTextField" disable="true" editable="false" focusTraversable="false" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="129.0" prefWidth="434.0" spacing="50.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="40.0">
+                     <children>
+                        <Label id="tagLabel" text="数据去向类型" />
+                        <Label id="tagLabel" text="目标数据库" />
+                        <Label id="tagLabel" text="目标数据表" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="147.0" prefWidth="250.0" spacing="25.0">
+                     <children>
+                        <TextField id="targetDataTypeTextField" fx:id="targetDataTypeTextField" disable="true" editable="false" focusTraversable="false" />
+                        <TextField id="targetDatabaseTextField" fx:id="targetDatabaseTextField" disable="true" editable="false" focusTraversable="false" />
+                        <TextField id="targetDatatableTextField" fx:id="targetDatatableTextField" disable="true" editable="false" focusTraversable="false" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="80.0" top="20.0" />
+         </padding>
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </HBox>
+      <Line endX="3058.5859375" endY="-1.657348871231079" opacity="0.33" startX="1951.29296875" startY="-1.657348871231079" stroke="WHITE" strokeWidth="2.0">
+         <VBox.margin>
+            <Insets bottom="30.0" left="80.0" right="80.0" top="15.0" />
+         </VBox.margin>
+      </Line>
+      <HBox prefHeight="643.0" prefWidth="1262.0">
+         <VBox.margin>
+            <Insets left="80.0" right="80.0" />
+         </VBox.margin>
+         <children>
+            <TableView id="fieldMapperTableView" fx:id="fieldMapperTableView" editable="true" prefHeight="626.0" prefWidth="845.0">
+              <columns>
+                <TableColumn maxWidth="420.0" minWidth="420.0" prefWidth="420.0" resizable="false" text="来源字段" />
+                <TableColumn maxWidth="420.0" minWidth="420.0" prefWidth="420.0" resizable="false" text="目标字段" />
+              </columns>
+            </TableView>
+            <VBox prefHeight="626.0" prefWidth="254.0" spacing="30.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#addMapperButtonClick" prefHeight="32.0" prefWidth="170.0" text="添加映射" />
+                  <Button mnemonicParsing="false" onAction="#automatchButtonClick" prefHeight="32.0" prefWidth="170.0" text="自动匹配同名字段" />
+                  <Button mnemonicParsing="false" onAction="#deleteMapperButtonClick" prefHeight="32.0" prefWidth="170.0" text="删除映射" />
+               </children>
+               <padding>
+                  <Insets left="40.0" top="200.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#saveButtonClick" prefHeight="32.0" prefWidth="120.0" text="保存" />
+            <Button mnemonicParsing="false" onAction="#scriptPreviewButtonClick" prefHeight="32.0" prefWidth="120.0" text="脚本预览" />
+            <Button mnemonicParsing="false" onAction="#executeButtonClick" prefHeight="32.0" prefWidth="120.0" text="运行" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="350.0" top="25.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="8.0" />
+   </padding>
+</VBox>

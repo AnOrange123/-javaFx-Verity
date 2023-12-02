@@ -1,0 +1,203 @@
+#Main{
+    -fx-background-color: #282C35;
+}
+#mainVBox{
+    -fx-background-color: #1A1C22;
+}
+
+.text-field{
+    -fx-text-fill: rgba(227, 227, 227, 0.80);
+    -fx-font-family: Inter;
+    -fx-font-size: 20px;
+    -fx-font-style: normal;
+    -fx-font-weight: 300;
+    -fx-line-height: normal;
+    -fx-background-color: #1A1C22;
+    -fx-border-width: 1px;
+    -fx-border-color: #52555B;
+}
+
+#returnMainMenuButton{
+    -fx-background-color:  rgba(62, 66, 74, 0.50);
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-pref-height: 45;
+    -fx-line-height: normal;
+    -fx-alignment: center;
+    -fx-background-radius: 100;
+}
+
+#returnMainMenuButton:hover{
+    -fx-background-color:  #F15B22;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-pref-height: 45;
+    -fx-line-height: normal;
+    -fx-alignment: center;
+    -fx-background-radius: 100;
+}
+
+#gotoButton{
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+    -fx-line-height: normal;
+    -fx-background-color: #111217;
+    -fx-border-width: 1px;
+    -fx-border-color: #52555B;
+}
+#gotoButton:hover {
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+    -fx-line-height: normal;
+    -fx-background-color: #F15B22;
+    -fx-border-width: 1px;
+    -fx-border-color: #52555B;
+}
+
+#directoryButtons{
+    -fx-background-color: rgba(62, 66, 74, 0.50);
+}
+
+#directoryButtons:hover{
+    -fx-background-color: #F15B22;
+}
+
+#mainRow .label{
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+    -fx-alignment: center;
+}
+
+#hdfsFileInfoTable{
+    -fx-background-color: #1A1C22;
+}
+
+.scroll-pane{
+    -fx-background-color: rgba(222, 223, 227, 0.35);
+}
+.scroll-pane .scroll-bar {
+    -fx-background-color: rgba(44, 47, 54, 0.8); /* 设置滚动条的背景颜色 */
+    -fx-pref-width: 25;
+}
+
+/* 自定义滚动条上的按钮（向上、向下按钮）样式 */
+.scroll-pane .scroll-bar .increment-button,
+.scroll-pane .scroll-bar .decrement-button {
+    -fx-background-color:  #1A1C22; /* 设置按钮的背景颜色 */
+    -fx-background-radius: 0; /* 去除按钮的圆角 */
+}
+
+/* 自定义滚动条上的滑块（拖动条）样式 */
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-color:  #1A1C22; /* 设置滑块的背景颜色 */
+    -fx-background-radius: 0; /* 去除滑块的圆角 */
+}
+
+
+#row .label{
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-pref-height: 50;
+    -fx-line-height: normal;
+    -fx-alignment: center;
+}
+
+#permissionLabel{
+    -fx-pref-width: 200;
+}
+#ownerLabel{
+    -fx-pref-width: 200;
+}
+#groupLabel{
+    -fx-pref-width: 200;
+}
+#sizeLabel{
+    -fx-pref-width: 150;
+}
+#blockSizeLabel{
+    -fx-pref-width: 150;
+}
+
+#pathButton{
+    -fx-background-color:  #1A1C22;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-pref-height: 45;
+    -fx-line-height: normal;
+    -fx-alignment: center;
+    -fx-pref-width: 200;
+    -fx-border-width: 0;
+    -fx-underline: true;
+}
+#pathButton:hover{
+    -fx-border-width: 0;
+    -fx-background-color:  #1A1C22;
+    -fx-text-fill: #F15B22;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-pref-height: 45;
+    -fx-line-height: normal;
+    -fx-alignment: center;
+    -fx-pref-width: 200;
+    -fx-underline: true;
+}
+
+#row{
+    -fx-pref-height: 50;
+    -fx-border-width: 1px;
+    -fx-border-color: rgba(222, 223, 227, 0.35);
+}
+
+#buttonBox{
+    -fx-spacing: 10;
+    -fx-pref-width: 141;
+    -fx-pref-height: 65;
+    -fx-alignment: center;
+    -fx-background-color: transport;
+}
+
+#buttonBox .button{
+    -fx-background-radius: 40px;
+    -fx-background-color: #3E424A;
+    -fx-pref-width: 55;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 15px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+}
+
+#buttonBox .button:hover{
+    -fx-background-radius: 40px;
+    -fx-background-color: #F15B22;
+    -fx-pref-width: 55;
+    -fx-text-fill: #FFF;
+    -fx-font-size: 15px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+    -fx-font-family: Inter;
+}

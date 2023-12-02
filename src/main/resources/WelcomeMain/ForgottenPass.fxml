@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<HBox id="registerUserBack" prefHeight="322.0" prefWidth="980.0" stylesheets="@RegisterUser.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="service.main.ForgottenPassController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="394.0">
+         <children>
+            <HBox prefHeight="147.0" prefWidth="394.0" spacing="20.0">
+               <children>
+                  <SVGPath content="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" fill="LIME" scaleX="2.0" scaleY="2.0" stroke="LIME" strokeWidth="0.8">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </SVGPath>
+                  <ProgressBar fx:id="stepFirstProgressBar" prefHeight="4.0" prefWidth="169.0" progress="0.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </ProgressBar>
+                  <SVGPath fx:id="registerStepSecondSVG" content="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="TRANSPARENT" scaleX="2.0" scaleY="2.0" scaleZ="2.0" stroke="WHITE" strokeWidth="1.1">
+                     <HBox.margin>
+                        <Insets left="5.0" top="3.0" />
+                     </HBox.margin>
+                  </SVGPath>
+                  <ProgressBar fx:id="stepSecondProgressBar" prefHeight="4.0" prefWidth="169.0" progress="0.0">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </ProgressBar>
+                  <SVGPath fx:id="registerStepThirdSVG" content="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" fill="WHITE" scaleX="2.0" scaleY="2.0" stroke="WHITE" strokeWidth="0.9">
+                     <HBox.margin>
+                        <Insets top="2.0" />
+                     </HBox.margin>
+                  </SVGPath>
+               </children>
+               <padding>
+                  <Insets left="50.0" top="100.0" />
+               </padding>
+            </HBox>
+            <Label fx:id="tipLabel" text="输入用户名和绑定的手机号">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="50.0" left="50.0" top="30.0" />
+               </VBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#nextButtonClick" prefHeight="32.0" prefWidth="97.0" text="下一步">
+               <VBox.margin>
+                  <Insets left="300.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Line endX="-100.0000228881836" endY="360.9236755371094" startX="-100.0" startY="49.69145202636719" stroke="WHITE" strokeWidth="2.5">
+         <HBox.margin>
+            <Insets left="70.0" />
+         </HBox.margin>
+      </Line>
+      <VBox fx:id="tipVBox" prefHeight="322.0" prefWidth="484.0">
+         <children>
+            <HBox prefHeight="172.0" prefWidth="462.0">
+               <children>
+                  <VBox prefHeight="180.0" prefWidth="121.0" spacing="35.0">
+                     <children>
+                        <Label id="loginLabel" text="用户名：" />
+                        <Label id="loginLabel" text="手机号：" />
+                        <Label id="loginLabel" fx:id="passLabel1" text="密码：" visible="false" />
+                        <Label id="loginLabel" fx:id="passLabel2" text="再次确认：" visible="false" />
+                     </children>
+                     <HBox.margin>
+                        <Insets top="55.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="180.0" prefWidth="315.0" spacing="30.0">
+                     <children>
+                        <TextField id="loginTextField" fx:id="userNameLabel" focusTraversable="false" />
+                        <TextField id="loginTextField" fx:id="phoneLabel" focusTraversable="false" />
+                        <PasswordField id="loginTextField" fx:id="passwordLabel" focusTraversable="false" visible="false" />
+                        <PasswordField id="loginTextField" fx:id="secPasswordLabel" focusTraversable="false" visible="false" />
+                     </children>
+                     <HBox.margin>
+                        <Insets top="50.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <HBox.margin>
+            <Insets left="30.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>

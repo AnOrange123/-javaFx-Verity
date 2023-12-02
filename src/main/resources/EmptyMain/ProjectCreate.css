@@ -1,0 +1,112 @@
+.button{
+    -fx-padding: 8px 47px;
+    -fx-alignment: center;
+    -fx-background-radius: 165px;
+    -fx-background-color: #3E424A;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 15px;
+    -fx-font-style: normal;
+    -fx-line-height: normal;
+}
+
+.button:hover{
+    -fx-padding: 8px 47px;
+    -fx-alignment: center;
+    -fx-background-radius: 165px;
+    -fx-background-color: #F15B22;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 15px;
+    -fx-font-style: normal;
+    -fx-font-weight: 500;
+    -fx-line-height: normal;
+}
+
+.text-field{
+    -fx-background-radius: 5px;
+    -fx-background-color: #3E424A;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+}
+
+#Main{
+    -fx-background-color: #1A1C22;
+}
+
+.label{
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 20px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+}
+
+
+.scroll-pane{
+    -fx-background-color:#1A1C22;
+}
+
+.scroll-pane .viewport{
+    -fx-background-color:#1A1C22;
+}
+
+.scroll-pane .scroll-bar {
+    -fx-background-color: rgba(44, 47, 54, 0.8); /* 设置滚动条的背景颜色 */
+    -fx-pref-width: 25;
+}
+
+/* 自定义滚动条上的按钮（向上、向下按钮）样式 */
+.scroll-pane .scroll-bar .increment-button,
+.scroll-pane .scroll-bar .decrement-button {
+    -fx-background-color:  #1A1C22; /* 设置按钮的背景颜色 */
+    -fx-background-radius: 0; /* 去除按钮的圆角 */
+}
+
+/* 自定义滚动条上的滑块（拖动条）样式 */
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-color:  #1A1C22; /* 设置滑块的背景颜色 */
+    -fx-background-radius: 0; /* 去除滑块的圆角 */
+}
+
+
+#row{
+    -fx-background-color: #1A1C22;
+    -fx-spacing: 50;
+}
+
+.check-box{
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 14px;
+    -fx-font-style: normal;
+    -fx-min-height: 30;
+    -fx-max-height: 30;
+    -fx-line-height: normal;
+    -fx-alignment: left;
+    -fx-pref-width: 240;
+    -fx-background-color: transport;
+    -fx-font-weight: 700;
+    -fx-focus-traversable: false;
+
+}
+
+.check-box .box {
+    -fx-background-color: white;
+    -fx-border-radius: 0;
+}
+
+.check-box .mark {
+    -fx-shape: "M1.73,12.91 8.1,19.28 22.79,4.59 22.79,1.59 8.1,16.28 1.73,9.91";
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #1A1C22;
+}

@@ -1,0 +1,82 @@
+#VerityTitle{
+    -fx-text-fill: #FFF;
+    -fx-font-family: Sarpanch;
+    -fx-font-size: 72px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+    -fx-letter-spacing: -0.54px;
+}
+
+#VerityTitleChild{
+    -fx-text-fill: #FFF;
+    -fx-font-family: Sarpanch;
+    -fx-font-size: 40px;
+    -fx-font-style: normal;
+    -fx-font-weight: 650;
+    -fx-line-height: normal;
+    -fx-letter-spacing: -0.54px;
+}
+
+#WelcomeMain{
+    -fx-background-color: #1A1C22;
+}
+
+#StartButton{
+    -fx-background-radius: 18px;
+    -fx-background-color: #F15B22;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 24px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+}
+
+#StartButton:hover{
+    -fx-background-color: #8c4429;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 26px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+}
+
+#loginLabel{
+    -fx-text-fill: #FFF;
+    -fx-font-family: Sarpanch;
+    -fx-font-size: 20px;
+    -fx-font-style: normal;
+    -fx-font-weight: 670;
+    -fx-line-height: normal;
+}
+
+#loginTextField{
+    -fx-background-radius: 5px;
+    -fx-background-color: #3E424A;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+}
+
+#promptLabel{
+    -fx-text-fill: #FFF;
+    -fx-font-family: Sarpanch;
+    -fx-font-size: 14px;
+    -fx-font-style: normal;
+    -fx-font-weight: 500;
+    -fx-line-height: normal;
+    -fx-underline: true;
+}
+
+#promptLabel:hover{
+    -fx-text-fill: #F15B22;
+    -fx-font-family: Sarpanch;
+    -fx-font-size: 14px;
+    -fx-font-style: normal;
+    -fx-font-weight: 500;
+    -fx-line-height: normal;
+    -fx-underline: true;
+}

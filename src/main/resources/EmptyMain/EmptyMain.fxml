@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<HBox id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@EmptyMain.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="service.main.EmptyMainController">
+   <children>
+      <VBox id="MainMenu" prefHeight="1080.0" prefWidth="315.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <SVGPath content="M36.6883 18.2752L49.3225 12.034C49.8536 11.7724 49.7778 10.9875 49.2086 10.8381L32.2872 6.39072C31.9458 6.31597 31.6423 6.54021 31.6043 6.87656L29.8211 32.4768C29.7832 32.8131 29.4797 33.0374 29.1761 32.9626L2.20052 26.8709C1.55554 26.7214 1.06231 26.1982 0.986431 25.5629L0.0379216 19.7701C-0.0758995 19.0974 0.265564 18.4621 0.83467 18.1257L19.2737 7.81087C19.6531 7.58664 20.1084 7.88562 20.0704 8.29672L19.6531 14.2016C19.6531 14.3885 19.5393 14.5753 19.3496 14.6501L6.67749 20.7792C6.14632 21.0408 6.2222 21.8256 6.79131 21.9751L24.3956 26.5345C24.7371 26.6093 25.0406 26.3851 25.0786 26.0487L26.8238 0.448474C26.8618 0.11212 27.1653 -0.112115 27.4688 -0.0373702L53.7236 5.8675C54.3685 6.01699 54.8618 6.50283 54.9376 7.13817L55.9241 12.9683C56.0379 13.6036 55.7344 14.2763 55.1273 14.6127L36.7642 25.2265C36.3848 25.4507 35.9295 25.1518 35.9675 24.7407L36.3848 18.7237C36.3848 18.5368 36.4986 18.3499 36.6883 18.2752Z" fill="#f39800" strokeLineCap="ROUND">
+                     <rotationAxis>
+                        <Point3D x="56.0" y="33.0" />
+                     </rotationAxis>
+                     <HBox.margin>
+                        <Insets left="61.0" right="12.0" top="74.0" />
+                     </HBox.margin>
+                  </SVGPath>
+                  <Label id="VerityTitle" text="Verity">
+                     <HBox.margin>
+                        <Insets top="65.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <ToggleButton id="MenuChild" fx:id="MXSJButton" alignment="CENTER_LEFT" graphicTextGap="24.0" mnemonicParsing="false" onAction="#MXSJButton" prefHeight="88.0" prefWidth="315.0" text="模型设计">
+               <graphic>
+                  <SVGPath fx:id="MXSJ_Svg" content="M15.5172 10.4138C17.8406 10.4138 19.7241 8.5303 19.7241 6.2069C19.7241 3.88349 17.8406 2 15.5172 2C13.1938 2 11.3103 3.88349 11.3103 6.2069C11.3103 8.5303 13.1938 10.4138 15.5172 10.4138ZM19.5345 10.9385C20.8742 9.80004 21.7241 8.10273 21.7241 6.2069C21.7241 2.77892 18.9452 0 15.5172 0C12.0893 0 9.31034 2.77892 9.31034 6.2069C9.31034 8.10273 10.1603 9.80004 11.5 10.9385L8.04089 15.7927C7.46124 15.6136 6.84533 15.5172 6.2069 15.5172C2.77892 15.5172 0 18.2962 0 21.7241C0 25.1521 2.77892 27.931 6.2069 27.931C9.63487 27.931 12.4138 25.1521 12.4138 21.7241C12.4138 19.6577 11.404 17.8271 9.8509 16.699L13.2179 11.974C13.929 12.2577 14.7049 12.4138 15.5172 12.4138C16.3296 12.4138 17.1054 12.2577 17.8165 11.974L20.864 16.2505C18.913 17.2967 17.5862 19.3555 17.5862 21.7241C17.5862 25.1521 20.3651 27.931 23.7931 27.931C27.2211 27.931 30 25.1521 30 21.7241C30 18.2962 27.2211 15.5172 23.7931 15.5172C23.4719 15.5172 23.1563 15.5416 22.8483 15.5887L19.5345 10.9385ZM6.2069 25.931C8.5303 25.931 10.4138 24.0475 10.4138 21.7241C10.4138 19.4007 8.5303 17.5172 6.2069 17.5172C3.88349 17.5172 2 19.4007 2 21.7241C2 24.0475 3.88349 25.931 6.2069 25.931ZM28 21.7241C28 24.0475 26.1165 25.931 23.7931 25.931C21.4697 25.931 19.5862 24.0475 19.5862 21.7241C19.5862 19.4007 21.4697 17.5172 23.7931 17.5172C26.1165 17.5172 28 19.4007 28 21.7241Z" fill="#8c8d8f00" stroke="#898a8c" strokeWidth="2.0" />
+               </graphic>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="70.0" />
+               </padding>
+               <toggleGroup>
+                  <ToggleGroup fx:id="MainMenu" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton id="MenuChild" fx:id="SJZYButton" alignment="CENTER_LEFT" graphicTextGap="24.0" mnemonicParsing="false" onAction="#SJZYButton" prefHeight="88.0" prefWidth="315.0" text="数据资源" toggleGroup="$MainMenu">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="70.0" />
+               </padding>
+               <graphic>
+                  <SVGPath fx:id="SJZY_Svg" content="M13.0714 3.71429L30.7143 3.7143 M1 3.71429L5.64286 3.71429 M9.35717 3.71429a2.81429 2.81429 0 1 0 0 5.62858 2.81429 2.81429 0 0 0 0-5.62858 M25.1429 13L30.7143 13 M1 13L17.7143 13 M21.4286 13a2.81429 2.81429 0 1 0 0 5.62857 2.81429 2.81429 0 0 0 0-5.62857 M18.6429 22.2857L30.7143 22.2857 M1 22.2857L11.6786 22.2857 M14.9286 22.2857a2.81429 2.81429 0 1 0 0 5.62858 2.81429 2.81429 0 0 0 0-5.62858" fill="#8c8d8f00" fillRule="EVEN_ODD" stroke="#8d8e90" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="1.8" />
+               </graphic>
+            </ToggleButton>
+            <ToggleButton id="MenuChild" fx:id="SJKFButton" alignment="CENTER_LEFT" graphicTextGap="24.0" mnemonicParsing="false" onAction="#SJKFButton" prefHeight="88.0" prefWidth="315.0" text="数据开发" toggleGroup="$MainMenu">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="70.0" />
+               </padding>
+               <graphic>
+                  <SVGPath fx:id="SJKF_Svg" content="M0 5.59998H29.5909 M8.26648 16.4L8.26648 21.9 M14.467 14.2L14.467 21.9 M20.6667 9.79999L20.6667 21.9" fill="#8c8d90" fillRule="EVEN_ODD" stroke="#8c8d90" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+               </graphic>
+            </ToggleButton>
+            <ToggleButton id="MenuChild" fx:id="SJTBButton" alignment="CENTER_LEFT" graphicTextGap="24.0" mnemonicParsing="false" onAction="#SJTBButton" prefHeight="88.0" prefWidth="315.0" text="数据同步" toggleGroup="$MainMenu">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="70.0" />
+               </padding>
+               <graphic>
+                  <SVGPath fx:id="SJTB_Svg" content="M1.15422 15.5C0.516765 15.5 -0.00477478 16.0176 0.0459034 16.6531C0.285981 19.6633 1.46147 22.5343 3.42232 24.856C5.63226 27.4726 8.69709 29.2225 12.0738 29.7956C15.4505 30.3687 18.921 29.728 21.8705 27.987C24.82 26.2461 27.058 23.5172 28.1881 20.284C29.3181 17.0508 29.2671 13.522 28.0442 10.3228C26.8214 7.12357 24.5055 4.46049 21.507 2.80541C18.5084 1.15033 15.0208 0.610097 11.6621 1.28043C8.68192 1.87521 5.97393 3.38896 3.91101 5.59425C3.47554 6.05978 3.56108 6.7896 4.05976 7.18668C4.55843 7.58377 5.2809 7.49694 5.72334 7.03803C7.44134 5.25608 9.66865 4.03224 12.1139 3.54422C14.9379 2.9806 17.8703 3.43483 20.3914 4.82642C22.9126 6.21801 24.8598 8.45711 25.888 11.147C26.9162 13.8369 26.959 16.8039 26.0089 19.5224C25.0588 22.2409 23.1771 24.5353 20.6971 25.999C18.2172 27.4628 15.2992 28.0015 12.46 27.5197C9.62092 27.0378 7.04402 25.5665 5.18591 23.3665C3.57703 21.4616 2.59698 19.1167 2.36302 16.6526C2.30277 16.018 1.79168 15.5 1.15422 15.5Z&#10;M1.15422 15.5C0.516765 15.5 -0.00477478 16.0176 0.0459034 16.6531C0.285981 19.6633 1.46147 22.5343 3.42232 24.856C5.63226 27.4726 8.69709 29.2225 12.0738 29.7956C15.4505 30.3687 18.921 29.728 21.8705 27.987C24.82 26.2461 27.058 23.5172 28.1881 20.284C29.3181 17.0508 29.2671 13.522 28.0442 10.3228C26.8214 7.12357 24.5055 4.46049 21.507 2.80541C18.5084 1.15033 15.0208 0.610097 11.6621 1.28043C8.68192 1.87521 5.97393 3.38896 3.91101 5.59425C3.47554 6.05978 3.56108 6.7896 4.05976 7.18668C4.55843 7.58377 5.2809 7.49694 5.72334 7.03803C7.44134 5.25608 9.66865 4.03224 12.1139 3.54422C14.9379 2.9806 17.8703 3.43483 20.3914 4.82642C22.9126 6.21801 24.8598 8.45711 25.888 11.147C26.9162 13.8369 26.959 16.8039 26.0089 19.5224C25.0588 22.2409 23.1771 24.5353 20.6971 25.999C18.2172 27.4628 15.2992 28.0015 12.46 27.5197C9.62092 27.0378 7.04402 25.5665 5.18591 23.3665C3.57703 21.4616 2.59698 19.1167 2.36302 16.6526C2.30277 16.018 1.79168 15.5 1.15422 15.5Z&#10;M4.95184 1L4.08712 3.83453L3.22239 6.66905L8.74466 8.35373&#10;M8.69958 15.5L20.2996 15.5&#10;M14.5 9.70001L14.5 21.3" fill="#8c8d90" stroke="#8c8d90" strokeWidth="1.8" />
+               </graphic>
+            </ToggleButton>
+         </children>
+      </VBox>
+      <VBox prefHeight="1080.0" prefWidth="1605.0">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="50.0" spacing="20.0">
+               <children>
+                  <Label graphicTextGap="90.0" onMouseClicked="#MinimizeWindows" onMouseEntered="#MinimizeHover" onMouseExited="#MinimizeExit" prefHeight="92.0" prefWidth="40.0">
+                     <graphic>
+                        <SVGPath fx:id="MinimizeSvg" content="M19.0561 1.65332L1.05609 1.65332" fill="TRANSPARENT" stroke="WHITE" strokeWidth="3.0" />
+                     </graphic>
+                  </Label>
+                  <Label id="VerityTitle" graphicTextGap="90.0" onMouseClicked="#CloseWindows" onMouseEntered="#CloseHover" onMouseExited="#CloseExit" prefHeight="50.0" prefWidth="48.0">
+                     <graphic>
+                        <SVGPath fx:id="CloseSvg" content="M14.944 14.3076L1.05609 0.999902&#10;M14.944 1L1.05609 14.3077" fill="TRANSPARENT" stroke="WHITE" strokeWidth="3.0" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="1500.0" />
+               </padding>
+            </HBox>
+            <VBox id="moduleContent" fx:id="ModuleContent" fillWidth="false" maxHeight="1025.0" maxWidth="1605.0" minHeight="1025.0" minWidth="1605.0" prefHeight="1025.0" prefWidth="1605.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

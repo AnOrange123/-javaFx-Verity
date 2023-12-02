@@ -1,0 +1,62 @@
+#main{
+    -fx-background-color: #282C35;
+}
+
+.list-view {
+    -fx-background-color: #343944;
+}
+
+.list-view .list-cell {
+    -fx-background-color: #343944;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 14px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: #1A1C22;
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: #1A1C22;
+}
+
+.list-view .list-view-scroll-bar .thumb {
+    -fx-background-color: #000000;
+}
+
+.list-view .list-view-scroll-bar .thumb {
+    -fx-width: 10px;
+    -fx-height: 10px;
+}
+
+.list-view .list-view-scroll-bar .thumb {
+    -fx-border-radius: 5px;
+}
+
+.button{
+    -fx-background-radius: 10px;
+    -fx-background-color: #3E424A;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+    -fx-alignment: center;
+}
+
+.button:hover{
+    -fx-background-radius: 10px;
+    -fx-background-color: #F15B22;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+    -fx-alignment: center;
+}

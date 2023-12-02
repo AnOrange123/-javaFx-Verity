@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
+
+<VBox id="WelcomeMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1020.0" stylesheets="@WelcomeMain.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="service.main.WelcomeMainController">
+   <children>
+      <HBox prefHeight="201.0" prefWidth="965.0" spacing="30.0">
+         <children>
+            <Label id="VerityTitle" graphicTextGap="90.0" prefHeight="84.0" prefWidth="378.0" text="Verity">
+               <HBox.margin>
+                  <Insets top="-30.0" />
+               </HBox.margin>
+               <graphic>
+                  <SVGPath content="M36.6883 18.2752L49.3225 12.034C49.8536 11.7724 49.7778 10.9875 49.2086 10.8381L32.2872 6.39072C31.9458 6.31597 31.6423 6.54021 31.6043 6.87656L29.8211 32.4768C29.7832 32.8131 29.4797 33.0374 29.1761 32.9626L2.20052 26.8709C1.55554 26.7214 1.06231 26.1982 0.986431 25.5629L0.0379216 19.7701C-0.0758995 19.0974 0.265564 18.4621 0.83467 18.1257L19.2737 7.81087C19.6531 7.58664 20.1084 7.88562 20.0704 8.29672L19.6531 14.2016C19.6531 14.3885 19.5393 14.5753 19.3496 14.6501L6.67749 20.7792C6.14632 21.0408 6.2222 21.8256 6.79131 21.9751L24.3956 26.5345C24.7371 26.6093 25.0406 26.3851 25.0786 26.0487L26.8238 0.448474C26.8618 0.11212 27.1653 -0.112115 27.4688 -0.0373702L53.7236 5.8675C54.3685 6.01699 54.8618 6.50283 54.9376 7.13817L55.9241 12.9683C56.0379 13.6036 55.7344 14.2763 55.1273 14.6127L36.7642 25.2265C36.3848 25.4507 35.9295 25.1518 35.9675 24.7407L36.3848 18.7237C36.3848 18.5368 36.4986 18.3499 36.6883 18.2752Z" fill="#f39800" scaleX="2.0" scaleY="2.0" strokeLineCap="ROUND" />
+               </graphic>
+            </Label>
+            <HBox prefHeight="201.0" prefWidth="16.0" spacing="20.0">
+               <children>
+                  <Label id="VerityTitle" graphicTextGap="90.0" onMouseClicked="#MinimizeWindows" onMouseEntered="#MinimizeHover" onMouseExited="#MinimizeExit" prefHeight="92.0" prefWidth="40.0">
+                     <graphic>
+                        <SVGPath fx:id="MinimizeSvg" content="M19.0561 1.65332L1.05609 1.65332" fill="TRANSPARENT" stroke="WHITE" strokeWidth="3.0" />
+                     </graphic>
+                  </Label>
+                  <Label id="VerityTitle" graphicTextGap="90.0" onMouseClicked="#CloseWindows" onMouseEntered="#CloseHover" onMouseExited="#CloseExit" prefHeight="93.0" prefWidth="377.0">
+                     <graphic>
+                        <SVGPath fx:id="CloseSvg" content="M14.944 14.3076L1.05609 0.999902&#10;M14.944 1L1.05609 14.3077" fill="TRANSPARENT" stroke="WHITE" strokeWidth="3.0" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="340.0" top="-100.0" />
+               </HBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="100.0" />
+         </padding>
+         <VBox.margin>
+            <Insets left="80.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox fx:id="contentHBox" prefHeight="322.0" prefWidth="980.0">
+         <children>
+            <Label id="VerityTitleChild" prefHeight="322.0" prefWidth="416.0" text="大数据开发平台">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <Line endX="-100.0000228881836" endY="360.9236755371094" startX="-100.0" startY="49.69145202636719" stroke="WHITE" strokeWidth="2.5">
+               <HBox.margin>
+                  <Insets left="70.0" />
+               </HBox.margin>
+            </Line>
+            <VBox prefHeight="322.0" prefWidth="484.0">
+               <children>
+                  <HBox prefHeight="172.0" prefWidth="462.0">
+                     <children>
+                        <VBox prefHeight="180.0" prefWidth="121.0" spacing="50.0">
+                           <children>
+                              <Label id="loginLabel" text="用户名：" />
+                              <Label id="loginLabel" text="密码：" />
+                           </children>
+                           <HBox.margin>
+                              <Insets top="55.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="180.0" prefWidth="315.0" spacing="50.0">
+                           <children>
+                              <TextField id="loginTextField" fx:id="userNameLabel" focusTraversable="false" />
+                              <PasswordField id="loginTextField" fx:id="passwordLabel" focusTraversable="false" />
+                           </children>
+                           <HBox.margin>
+                              <Insets top="50.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="333.0" spacing="15.0">
+                     <children>
+                        <Label id="promptLabel" onMouseClicked="#registerButtonClick" prefHeight="21.0" prefWidth="141.0" text="无账号？前往注册" />
+                        <Label id="promptLabel" onMouseClicked="#forgottenButtonClick" prefHeight="19.0" prefWidth="143.0" text="找回密码" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <Button id="StartButton" fx:id="startButton" mnemonicParsing="false" onAction="#Start" prefHeight="50.0" prefWidth="170.0" text="Get Start">
+         <VBox.margin>
+            <Insets left="420.0" top="30.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

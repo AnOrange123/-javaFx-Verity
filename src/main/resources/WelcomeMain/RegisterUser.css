@@ -1,0 +1,62 @@
+#registerUserBack{
+    -fx-background-color: #1A1C22;
+}
+
+
+.button{
+    -fx-background-radius: 15px;
+    -fx-background-color: #F15B22;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+    -fx-font-weight: 500;
+    -fx-line-height: normal;
+}
+
+.button:hover{
+    -fx-background-color: #8c4429;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+    -fx-font-weight: 500;
+    -fx-line-height: normal;
+}
+
+
+.label{
+    -fx-text-fill: #FFF;
+    -fx-font-family: Sarpanch;
+    -fx-font-size: 20px;
+    -fx-font-style: normal;
+    -fx-font-weight: 670;
+    -fx-line-height: normal;
+}
+
+.text-field{
+    -fx-background-radius: 5px;
+    -fx-background-color: #3E424A;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+}
+
+.progress-bar {
+    -fx-accent: #00ff00;
+}
+
+.progress-bar .bar {
+    -fx-padding: 1px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.progress-bar > .track {
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-text-box-border: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-background-color: #FFF;
+}

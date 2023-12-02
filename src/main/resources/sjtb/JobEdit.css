@@ -1,0 +1,204 @@
+#mainVBox{
+    -fx-background-color: #282C35;
+}
+
+#jobNameLabel{
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 24px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+}
+
+#tagLabel{
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+}
+
+.text-field{
+    -fx-pref-height: 35;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 14px;
+    -fx-font-style: normal;
+    -fx-font-weight: 250;
+    -fx-background-color: #1A1C22;
+}
+
+.button{
+    -fx-background-radius: 10px;
+    -fx-background-color: #3E424A;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+    -fx-alignment: center;
+}
+
+.button:hover{
+    -fx-background-radius: 10px;
+    -fx-background-color: #F15B22;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+    -fx-alignment: center;
+}
+
+.table-view{
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-pref-height: 678;
+}
+
+.table-view .column-header {
+    -fx-background-color: #282C35;
+    -fx-border-color: #585B61;
+    -fx-pref-height: 40;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: rgba(255, 255, 255, 0.80);
+    -fx-font-family: Inter;
+    -fx-font-size: 15px;
+    -fx-font-style: normal;
+    -fx-font-weight: 800;
+    -fx-line-height: normal;
+}
+
+.table-row-cell {
+    -fx-background-color: #3E424A;
+    -fx-border-color: #585B61;
+    -fx-border-width: 0;
+    -fx-pref-width: 250px;
+}
+
+.table-view .column-header-background,
+.table-view .column-header-background .filler,
+.table-view .corner {
+    -fx-background-color: #3E424A;
+    -fx-border-color: #585B61;
+    -fx-border-width: 1px
+}
+
+.table-column {
+    -fx-text-fill: rgba(255, 255, 255, 0.80);
+    -fx-font-family: Inter;
+    -fx-font-size: 14px;
+    -fx-font-style: normal;
+    -fx-font-weight: 300;
+    -fx-line-height: normal;
+    -fx-background-color: #3E424A;
+    -fx-border-color: #585B61;
+    -fx-border-width: 1px;
+    -fx-pref-height: 35;
+    -fx-alignment: center;
+}
+
+.table-view .scroll-bar {
+    -fx-background-color: rgba(44, 47, 54, 0.8); /* 设置滚动条的背景颜色 */
+}
+
+/* 自定义滚动条上的按钮（向上、向下按钮）样式 */
+.table-view .scroll-bar .increment-button,
+.table-view .scroll-bar .decrement-button {
+    -fx-background-color:  #1A1C22; /* 设置按钮的背景颜色 */
+    -fx-background-radius: 0; /* 去除按钮的圆角 */
+}
+
+/* 自定义滚动条上的滑块（拖动条）样式 */
+.table-view .scroll-bar .thumb {
+    -fx-background-color:  #1A1C22; /* 设置滑块的背景颜色 */
+    -fx-background-radius: 0; /* 去除滑块的圆角 */
+}
+
+.table-row-cell:filled:hover {
+    -fx-background-color: rgba(47, 49, 56, 0.5);
+    -fx-border-color: #797979;
+}
+.table-row-cell:filled:selected:hover {
+    -fx-background-color: rgba(47, 49, 56, 0.5);
+}
+.table-row-cell:filled:selected {
+    -fx-background-color: rgba(47, 49, 56, 0.5);
+    -fx-background-insets: 0.0;
+    -fx-background-radius: 0.0;
+}
+.table-row-cell:filled:selected .table-cell {
+    -fx-background-color: rgba(47, 49, 56, 0.5);
+    -fx-background-insets: 0.0;
+    -fx-background-radius: 0.0;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+
+.combo-box {
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 14px;
+    -fx-font-style: normal;
+    -fx-font-weight: 250;
+    -fx-line-height: normal;
+}
+
+.combo-box .text-field{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 14px;
+    -fx-font-style: normal;
+    -fx-font-weight: 250;
+    -fx-line-height: normal;
+    -fx-alignment: center;
+}
+
+.combo-box .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 14px;
+    -fx-font-style: normal;
+    -fx-font-weight: 250;
+    -fx-line-height: normal;
+    -fx-alignment: center;
+}
+
+.combo-box .arrow-button{
+    -fx-background-color: #3E424A;
+}
+
+.combo-box .list-view {
+    -fx-background-color:#3E424A; /* 修改下拉框背景颜色 */
+    -fx-border-color: #585B61;
+    -fx-border-width: 1px;
+    -fx-padding: 1.5;
+}
+
+/* 设置ComboBox下拉框中选中项的颜色 */
+.combo-box .list-cell:hover {
+    -fx-background-color: #1A1C22; /* 修改选中项背景颜色 */
+}
+
+/* 设置ChoiceBox的下拉框中的文本颜色 */
+.combo-box .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 14px;
+    -fx-font-style: normal;
+    -fx-font-weight: 250;
+    -fx-alignment: center;
+}

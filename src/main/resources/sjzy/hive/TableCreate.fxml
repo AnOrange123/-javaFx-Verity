@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
+
+<VBox id="Main" fx:id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" stylesheets="@TableCreate.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="service.sjzy.hive.TableCreateController">
+   <children>
+      <Label id="TableCreateTitleLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="1138.0" text="创建数据表">
+         <VBox.margin>
+            <Insets bottom="20.0" top="24.0" />
+         </VBox.margin>
+      </Label>
+      <Line id="SplitLine" endX="950.0" startX="-100.0" strokeType="OUTSIDE">
+         <VBox.margin>
+            <Insets left="70.0" />
+         </VBox.margin>
+      </Line>
+      <HBox prefHeight="175.0" prefWidth="200.0">
+         <children>
+            <VBox id="TipVBox" prefHeight="174.0" prefWidth="161.0" spacing="43.0">
+               <children>
+                  <Label text="表名" />
+                  <Label text="注释" />
+                  <Label prefHeight="32.0" prefWidth="126.0" text="HDFS路径" />
+               </children>
+               <HBox.margin>
+                  <Insets bottom="35.0" left="220.0" top="35.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox id="NameAndCommentVBox" prefHeight="175.0" prefWidth="560.0" spacing="39.0">
+               <children>
+                  <TextField fx:id="tableName" focusTraversable="false" />
+                  <TextField fx:id="tableComment" focusTraversable="false" />
+                  <TextField fx:id="tableLocation" focusTraversable="false" />
+               </children>
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <Line id="SplitLine" endX="950.0" startX="-100.0" strokeType="OUTSIDE">
+         <VBox.margin>
+            <Insets left="70.0" />
+         </VBox.margin>
+      </Line>
+      <HBox id="AddButtonHBox" prefHeight="10.0" prefWidth="1105.0" spacing="12.0">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addRowButtonClick">
+               <graphic>
+                  <SVGPath content="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" scaleX="1.5" scaleY="1.5" stroke="WHITE" strokeWidth="2.0" />
+               </graphic></Button>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#reduceRowButtonClick">
+               <graphic>
+                  <SVGPath content="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" scaleX="1.7" stroke="WHITE" strokeWidth="3.0" />
+               </graphic></Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="15.0" left="95.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox id="TableHeaderHBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="873.0">
+         <children>
+            <Label prefHeight="37.0" prefWidth="205.0" text="字段名" />
+            <Label text="注释" />
+            <Label text="数据类型" />
+            <Label text="作为分区" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets left="170.0" right="140.0" />
+         </VBox.margin>
+      </HBox>
+      <ScrollPane id="scroll" fitToHeight="true" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="849.0">
+         <content>
+            <VBox id="TableContentVBox" fx:id="tableConstruct" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="800.0" />
+         </content>
+         <VBox.margin>
+            <Insets left="170.0" right="115.0" />
+         </VBox.margin>
+      </ScrollPane>
+      <HBox id="ConfirmButtonBox" prefHeight="34.0" prefWidth="1200.0" spacing="70.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#confirmButtonClick" text="确认" />
+            <Button mnemonicParsing="false" onAction="#cancelButtonClick" text="取消" />
+         </children>
+         <VBox.margin>
+            <Insets left="400.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

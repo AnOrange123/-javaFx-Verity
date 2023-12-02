@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
+
+<VBox id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1007.0" prefWidth="1270.0" stylesheets="@DataModuleEdit.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="service.sjmx.DataModuleEditController">
+   <children>
+      <Label id="DataModuleNameLabel">
+         <VBox.margin>
+            <Insets left="50.0" top="50.0" />
+         </VBox.margin>
+      </Label>
+      <TabPane prefHeight="875.0" prefWidth="1142.0" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="50.0" tabMaxWidth="120.0" tabMinHeight="50.0" tabMinWidth="120.0">
+        <tabs>
+          <Tab text="模型信息">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox prefHeight="17.0" prefWidth="1128.0" spacing="10.0">
+                           <children>
+                              <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addRowButtonClick">
+                                 <graphic>
+                                    <SVGPath content="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" scaleX="1.5" scaleY="1.5" stroke="WHITE" strokeWidth="2.0" />
+                                 </graphic>
+                              </Button>
+                              <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#reduceRowButtonClick">
+                                 <graphic>
+                                    <SVGPath content="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" scaleX="1.7" stroke="WHITE" strokeWidth="3.0" />
+                                 </graphic>
+                              </Button>
+                              <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="96.0" text="一键导入" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="748.0" prefWidth="1098.0" spacing="30.0">
+                           <children>
+                              <VBox id="dataModuleInfoTable" fx:id="dataModuleInfoTable" prefHeight="752.0" prefWidth="939.0">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox prefHeight="748.0" prefWidth="83.0" spacing="30.0">
+                                 <children>
+                                    <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#dataModuleSaveButtonClick" prefHeight="34.0" prefWidth="122.0" text="保存">
+                                       <VBox.margin>
+                                          <Insets top="300.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#ddlGenerateButtonClick" prefHeight="34.0" prefWidth="110.0" text="生成ddl" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </VBox>
+               </content>
+          </Tab>
+          <Tab text="血缘关系">
+               <content>
+                  <HBox prefHeight="829.0" prefWidth="1128.0" spacing="30.0">
+                     <children>
+                        <ScrollPane id="ParentBloodScroll" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="275.0">
+                           <content>
+                              <VBox prefHeight="755.0" prefWidth="249.0">
+                                 <children>
+                                    <Label id="BloodTitleLabel" prefHeight="50.0" prefWidth="249.0" text="上游" />
+                                 </children>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                        <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="110.0">
+                           <children>
+                              <CubicCurve controlX1="-975.2236938476562" controlX2="-938.958984375" controlY1="964.1385498046875" controlY2="991.0003662109375" endX="-875.052734375" endY="1000.7802734375" fill="#1f93ff00" startX="-983.4157104492188" startY="909.4172973632812" stroke="WHITE" strokeWidth="2.0">
+                                 <VBox.margin>
+                                    <Insets top="250.0" />
+                                 </VBox.margin>
+                              </CubicCurve>
+                              <Line endX="-143.7352294921875" endY="144.92892456054688" startX="-251.32101440429688" startY="141.3431396484375" stroke="WHITE" strokeWidth="2.0">
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </Line>
+                              <CubicCurve controlX1="-975.2236938476562" controlX2="-938.958984375" controlY1="964.1385498046875" controlY2="991.0003662109375" endX="-876.9666748046875" endY="1007.38134765625" fill="#1f93ff00" rotate="90.0" startX="-979.2318725585938" startY="901.097412109375" stroke="WHITE" strokeWidth="2.0">
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </CubicCurve>
+                           </children>
+                        </VBox>
+                        <Label id="BloodLabel" alignment="CENTER" prefHeight="756.0" prefWidth="146.0" wrapText="true">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="110.0" rotate="180.0">
+                           <children>
+                              <CubicCurve controlX1="-975.2236938476562" controlX2="-938.958984375" controlY1="964.1385498046875" controlY2="991.0003662109375" endX="-875.052734375" endY="1000.7802734375" fill="#1f93ff00" startX="-983.4157104492188" startY="909.4172973632812" stroke="WHITE" strokeWidth="2.0">
+                                 <VBox.margin>
+                                    <Insets top="250.0" />
+                                 </VBox.margin>
+                              </CubicCurve>
+                              <Line endX="-143.7352294921875" endY="144.92892456054688" startX="-251.32101440429688" startY="141.3431396484375" stroke="WHITE" strokeWidth="2.0">
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </Line>
+                              <CubicCurve controlX1="-975.2236938476562" controlX2="-938.958984375" controlY1="964.1385498046875" controlY2="991.0003662109375" endX="-876.9666748046875" endY="1007.38134765625" fill="#1f93ff00" rotate="90.0" startX="-979.2318725585938" startY="901.097412109375" stroke="WHITE" strokeWidth="2.0">
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </CubicCurve>
+                           </children>
+                        </VBox>
+                        <ScrollPane id="ChildBloodScroll" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="275.0">
+                           <content>
+                              <VBox prefHeight="755.0" prefWidth="251.0">
+                                 <children>
+                                    <Label id="BloodTitleLabel" prefHeight="50.0" prefWidth="251.0" text="下游" />
+                                 </children>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="30.0" left="50.0" right="50.0" top="30.0" />
+                     </padding>
+                  </HBox>
+               </content></Tab>
+        </tabs>
+         <VBox.margin>
+            <Insets bottom="15.0" left="70.0" right="70.0" top="30.0" />
+         </VBox.margin>
+      </TabPane>
+   </children>
+</VBox>

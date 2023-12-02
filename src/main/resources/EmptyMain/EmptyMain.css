@@ -1,0 +1,48 @@
+#Main{
+    -fx-background-color: #282C35;
+}
+
+#VerityTitle{
+    -fx-text-fill: #FFF;
+    -fx-font-family: Sarpanch;
+    -fx-font-size: 36px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+    -fx-letter-spacing: -0.54px;
+}
+
+#MainMenu{
+    -fx-background-color: #1A1C22;
+}
+
+#MenuChild{
+    -fx-background-color: #1A1C22;
+    -fx-text-fill: rgba(255, 255, 255, 0.50);
+    -fx-font-family: Inter;
+    -fx-font-size: 24px;
+    -fx-font-style: normal;
+    -fx-font-weight: 400;
+    -fx-line-height: normal;
+}
+
+#MenuChild:hover {
+    -fx-text-fill: #FF8303;
+    -fx-font-family: Inter;
+    -fx-font-size: 24px;
+    -fx-font-style: normal;
+    -fx-font-weight: 400;
+    -fx-line-height: normal;
+    -fx-background-color: black;
+}
+
+#MenuChild:selected {
+    -fx-text-fill: #FF8303;
+    -fx-font-family: Inter;
+    -fx-font-size: 24px;
+    -fx-font-style: normal;
+    -fx-font-weight: 400;
+    -fx-line-height: normal;
+    -fx-background-color: #FF8303;
+    -fx-background-insets: 0 0 0 310px;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="Main" maxHeight="1025.0" maxWidth="1605.0" minHeight="1025.0" minWidth="1605.0" prefHeight="1025.0" prefWidth="1605.0" stylesheets="@SJMXDetail.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="service.sjmx.SJMXDetailController">
+   <children>
+      <HBox prefHeight="1090.0" prefWidth="1605.0" spacing="9.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <VBox id="FileTreeVBox" fx:id="MainBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1007.0" prefWidth="308.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label id="SJMXTitleLabel" fx:id="SJMXTitleLabel" alignment="CENTER" onMouseClicked="#contextMenuDisplay" prefHeight="103.0" prefWidth="308.0" />
+                     </children>
+                  </HBox>
+                  <TreeView id="ModuleTreeView" fx:id="ModuleTreeView" onMouseClicked="#contextMenuDisplay" prefHeight="937.0" prefWidth="308.0" showRoot="false" />
+               </children>
+            </VBox>
+            <VBox id="DataModuleContent" fx:id="DataModuleContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1007.0" prefWidth="1270.0" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+   </padding>
+</VBox>

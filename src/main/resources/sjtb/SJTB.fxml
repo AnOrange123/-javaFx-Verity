@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="Main" fx:id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1025.0" prefWidth="1605.0" stylesheets="@SJTB.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="service.sjtb.SJTBController">
+   <children>
+      <HBox prefHeight="1090.0" prefWidth="1605.0" spacing="9.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets bottom="9.0" left="9.0" right="9.0" top="15.0" />
+         </VBox.margin>
+         <children>
+            <VBox id="MainBox" fx:id="MainBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1008.0" prefWidth="308.0">
+               <children>
+                  <Label id="SJTBTitle" alignment="CENTER" onMouseClicked="#contextMenuDisplay" prefHeight="103.0" prefWidth="308.0" text="同步作业" />
+                  <TreeView id="JobTreeView" fx:id="JobTreeView" onMouseClicked="#contextMenuDisplay" prefHeight="937.0" prefWidth="308.0" showRoot="false" />
+               </children>
+            </VBox>
+            <VBox fx:id="JobDetailContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1270.0" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

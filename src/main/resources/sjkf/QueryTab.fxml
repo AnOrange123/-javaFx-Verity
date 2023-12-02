@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.web.WebView?>
+
+<HBox id="MainBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1019.0" prefWidth="1271.0" spacing="15.0" stylesheets="@QueryTab.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="service.sjkf.QueryTabController">
+   <children>
+      <VBox id="codeEditBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1001.0" prefWidth="1100.0" spacing="9.0">
+         <HBox.margin>
+            <Insets bottom="9.0" top="9.0" />
+         </HBox.margin>
+         <children>
+            <SplitPane id="splitPane" fx:id="splitPane" dividerPositions="1.5" orientation="VERTICAL" prefHeight="1019.0" prefWidth="1090.0">
+              <items>
+                  <WebView fx:id="codeEditor" prefHeight="512.0" prefWidth="1088.0" />
+                  <VBox id="resultShowBox" fx:id="resultShowBox" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="1088.0" />
+              </items>
+            </SplitPane>
+         </children>
+      </VBox>
+      <VBox prefHeight="1019.0" prefWidth="177.0" spacing="40.0">
+         <children>
+            <ComboBox fx:id="databaseChoice" prefHeight="35.0" prefWidth="160.0" promptText="选择数据库" />
+            <Button fx:id="executeButton" graphicTextGap="8.0" mnemonicParsing="false" onAction="#executeButtonClick" prefHeight="20.0" prefWidth="120.0" text="执行" textAlignment="CENTER">
+               <graphic>
+                  <SVGPath content="M1.21502 14.3268C0.631767 13.9299 0.631765 13.0701 1.21501 12.6732L19.4374 0.273827C20.1013 -0.17791 21 0.297583 21 1.10058L21 25.8994C21 26.7024 20.1013 27.1779 19.4374 26.7262L1.21502 14.3268Z" fill="WHITE" scaleX="0.6" scaleY="0.6" />
+               </graphic></Button>
+            <Button id="saveButton" fx:id="saveButton" mnemonicParsing="false" onAction="#saveButtonClick" prefHeight="35.0" prefWidth="120.0" text="保存">
+               <graphic>
+                  <SVGPath content="M17.0798 0H4C1.79086 0 0 1.79086 0 4V22C0 24.2091 1.79086 26 4 26H22C24.2091 26 26 24.2091 26 22V6.06155L17.0798 0ZM3.3916 7.65216C3.3916 6.54759 4.28703 5.65216 5.3916 5.65216H17.7829C18.8875 5.65216 19.7829 6.54759 19.7829 7.65216V8.73912C19.7829 9.84369 18.8875 10.7391 17.7829 10.7391H5.3916C4.28703 10.7391 3.3916 9.84369 3.3916 8.73912V7.65216ZM18.6522 22.6087C20.213 22.6087 21.4783 21.3434 21.4783 19.7826C21.4783 18.2218 20.213 16.9565 18.6522 16.9565C17.0914 16.9565 15.8261 18.2218 15.8261 19.7826C15.8261 21.3434 17.0914 22.6087 18.6522 22.6087Z" fill="WHITE" scaleX="0.5" scaleY="0.5" />
+               </graphic></Button>
+         </children>
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>

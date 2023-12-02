@@ -1,0 +1,126 @@
+#Main{
+    -fx-background-color: #282C35;
+}
+
+#FileTreeVBox{
+    -fx-background-color: #1A1C22;
+}
+
+#returnProjectTableButton{
+    -fx-background-color:  rgba(62, 66, 74, 0.50);
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 15px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-pref-height: 45;
+    -fx-line-height: normal;
+    -fx-alignment: center;
+    -fx-background-radius: 20;
+}
+
+#returnProjectTableButton:hover{
+    -fx-background-color:  #F15B22;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 15px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-pref-height: 45;
+    -fx-line-height: normal;
+    -fx-alignment: center;
+    -fx-background-radius: 20;
+}
+
+#ModuleTreeView{
+    -fx-background-color: #1A1C22;
+    -fx-pref-width: 308;
+}
+
+#SJMXTitleLabel{
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 24px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+}
+
+.tree-cell {
+    -fx-background-color: #1A1C22;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 18px;
+    -fx-font-style: normal;
+    -fx-font-weight: 300;
+    -fx-line-height: normal;
+    -fx-padding: 13px;
+}
+
+.tree-view {
+    -fx-pref-height: 900px;
+}
+
+.tree-view :selected{
+    -fx-background-radius: 5px;
+    -fx-background-color: rgba(44, 47, 54, 0.80);
+}
+.tree-cell > .tree-disclosure-node > .arrow {
+    -fx-background-color: white;
+}
+
+/* 自定义TreeView的滚动条样式 */
+.tree-view .scroll-bar {
+    -fx-background-color: rgba(44, 47, 54, 0.8); /* 设置滚动条的背景颜色 */
+}
+
+/* 自定义滚动条上的按钮（向上、向下按钮）样式 */
+.tree-view .scroll-bar .increment-button,
+.tree-view .scroll-bar .decrement-button {
+    -fx-background-color:  #1A1C22; /* 设置按钮的背景颜色 */
+    -fx-background-radius: 0; /* 去除按钮的圆角 */
+}
+
+/* 自定义滚动条上的滑块（拖动条）样式 */
+.tree-view .scroll-bar .thumb {
+    -fx-background-color:  #1A1C22; /* 设置滑块的背景颜色 */
+    -fx-background-radius: 0; /* 去除滑块的圆角 */
+}
+.scroll-bar:vertical {
+    -fx-pref-width: 20px; /* 设置垂直滚动条的宽度 */
+}
+
+/* 设置ContextMenu的背景颜色和边框 */
+.context-menu {
+    -fx-content-display: inline-flex;
+    -fx-padding: 16px 0px;
+    -fx-background-radius: 5px;
+    -fx-background-color: #53565E;
+    -fx-pref-width: 146px;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+.context-menu .menu-item {
+    -fx-background-color: #53565E;
+    -fx-font-family: Inter;
+    -fx-font-size: 18px;
+    -fx-font-style: normal;
+    -fx-font-weight: 300;
+    -fx-alignment: center;
+}
+
+.context-menu .menu-item:hover {
+    -fx-background-color: rgba(40, 43, 50, 0.50); /* 悬停时的背景颜色 */
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 18px;
+    -fx-font-style: normal;
+    -fx-font-weight: 300;
+}
+
+.context-menu .menu-item .label {
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}

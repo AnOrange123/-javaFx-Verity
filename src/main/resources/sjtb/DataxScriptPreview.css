@@ -1,0 +1,28 @@
+#main{
+    -fx-background-color: #282C35;
+}
+
+
+.button{
+    -fx-background-radius: 10px;
+    -fx-background-color: #3E424A;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+    -fx-alignment: center;
+}
+
+.button:hover{
+    -fx-background-radius: 10px;
+    -fx-background-color: #F15B22;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 16px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+    -fx-alignment: center;
+}

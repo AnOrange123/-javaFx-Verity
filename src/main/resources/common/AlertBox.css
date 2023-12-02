@@ -1,0 +1,38 @@
+.button{
+    -fx-padding: 8px 47px;
+    -fx-alignment: center;
+    -fx-background-radius: 165px;
+    -fx-background-color: #3E424A;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 17px;
+    -fx-font-weight: 700;
+    -fx-font-style: normal;
+    -fx-line-height: normal;
+}
+
+.button:hover{
+    -fx-padding: 8px 47px;
+    -fx-alignment: center;
+    -fx-background-radius: 165px;
+    -fx-background-color: #F15B22;
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 17px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-height: normal;
+}
+
+#Main{
+    -fx-background-color: #1A1C22;
+}
+
+.label{
+    -fx-text-fill: #FFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 17px;
+    -fx-font-style: normal;
+    -fx-font-weight: 600;
+    -fx-line-height: normal;
+}
