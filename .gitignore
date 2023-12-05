@@ -39,3 +39,4 @@ build/
 /conf/config.properties
 /dependency-reduced-pom.xml
 /.idea/
+/SetUp/
